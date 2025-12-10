@@ -1,0 +1,14 @@
+{
+  "name": "socekt",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "socket.js",
+  "scripts": {
+     "start": "node socket.js",
+    "dev": "nodemon socket.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
