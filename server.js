@@ -19,7 +19,7 @@ app.get('/', (req, res) => {    // ✅ order fixed
 // socket.IO connection handler
 //adding users
 
-io.on('connection', (socket) => {        // ✅ spelling fixed
+io.on('connection', (socket) => {
   console.log('A user connected');
 
   // handle new message
