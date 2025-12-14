@@ -5,7 +5,7 @@ const socket = io();
     // Add username handling
     const usernameInput = document.getElementById('username-input');
     const setUsernameBtn = document.getElementById('set-username');
-    let currentUsername = 'Anonymous';
+    let currentUsername = 'Sujal';
 
       setUsernameBtn.addEventListener('click', () => {
         const newUsername = usernameInput.value.trim();

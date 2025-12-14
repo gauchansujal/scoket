@@ -23,7 +23,7 @@ io.on('connection', (socket) => {
   console.log('A user connected');
 
   // handle new message
-  socket.username = "Anonymous"; //a defult name
+  socket.username = "Sujal"; //a defult name
   socket.on('chat message', (msg) => { 
       // ✅ lowercase socket
       io.emit('chat message',{ //this send the messafe to all connected users, including the sender
