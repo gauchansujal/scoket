@@ -1,23 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>chat</title>
+    <meta charset="UTF-8">
+    <title>Socket.IO Chat Rooms</title>
     <link rel="stylesheet" href="public.css">
 </head>
-
 <body>
-    <h1>messanger</h1>
 
-    <ul id="messages"></ul>
+<div id="chat-container">
+    <div id="sidebar">
+        <h3>Rooms</h3>
+        <ul id="room-list">
+            <li class="room active" data-room="general">General</li>
+            <li class="room" data-room="random">Random</li>
+        </ul>
 
-      <form id="form" action="#">
-    <input id="input" autocomplete="off" placeholder="Type your message..." />
-       <input type="text" id="username-input" placeholder="Enter your username" />
-    <button id="set-username">Set Username</button>
-   <button>Send</button>
-    </form>
+        <div id="create-room">
+            <input type="text" id="new-room" placeholder="New room name" />
+            <button id="create-room-btn">Create Room</button>
+        </div>
+    </div>
 
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="client.js"></script>
+    <div id="chat-area">
+        <div id="messages"></div>
+
+        <form id="form">
+            <input id="input" autocomplete="off" placeholder="Type a message..." />
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+
 </body>
 </html>
